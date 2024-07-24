@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout page</title>
+    <link rel="stylesheet" href="./checkout/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--left image-->
+      <div class="left">
+        <img
+          src="./images/pngimg.com - photo_camera_PNG101644.png"
+          alt="camara"
+        />
+        <div class="image-caption">
+          <p>INTAX MINI 90 NEA CLASSIC</p>
+          <h4>$144.99</h4>
+        </div>
+      </div>
+
+      <!--right card-->
+      <div class="right">
+        <h2 class="title">CREDIT CARD CHECKOUT</h2>
+
+        <form action="">
+          <!--card name-->
+          <div class="form-group">
+            <label for="name">CARDHODER'S NAME</label>
+            <input type="text" id="name" placeholder="ABCDEF GHIJK" />
+          </div>
+          <!--card number-->
+          <div class="form-group">
+            <label for="num">CARD NUMBER</label>
+            <input
+              type="tel"
+              id="num"
+              placeholder="1001 2002 .... ...."
+              maxlength="12"
+              pattern="\d*"
+            />
+          </div>
+          <!--expiry date-->
+          <div class="inline-group">
+            <div class="inline-form-group">
+              <label for="date">EXPIRATION DATE</label>
+              <input
+                type="text"
+                size="6"
+                id="date"
+                placeholder="MM/YY"
+                minlength="5"
+                maxlength="5"
+              />
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <!--cvv-->
+            <div class="inline-form-group">
+              <label for="passcode">CVV</label>
+              <input type="text" id="passcode" placeholder="35" maxlength="3" />
+            </div>
+          </div>
+          <!--submit-->
+
+          <input class="placeorder" type="button" value="PLACE ORDER" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
